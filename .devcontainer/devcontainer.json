@@ -3,6 +3,7 @@
     "dockerFile": "Dockerfile",
     "extensions": [
         "ms-azuretools.vscode-docker",
-        "matklad.rust-analyzer"
+        "matklad.rust-analyzer",
+        "vadimcn.vscode-lldb"
     ],
 }
