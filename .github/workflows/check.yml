@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
           strategy: regex
-          regex_pattern: "version = "(?<version>\\d+\\.\\d+\\.\\d+(.+)?)"\\n?"
+          regex_pattern: "version = \"(?<version>\\d+\\.\\d+\\.\\d+(.+)?)\"\\n?"
           root: "Cargo.toml"
           tag_prefix: "v"
           dry_run: true
