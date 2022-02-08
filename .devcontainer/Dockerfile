@@ -1,4 +1,5 @@
 FROM rust:slim
+# FROM rust:1.58.1-slim
 
 RUN apt update \
     && apt install -y --no-install-recommends \
