@@ -1,4 +1,4 @@
-FROM rust:1.52.1-slim
+FROM rust:slim
 
 RUN apt update \
     && apt install -y --no-install-recommends \
@@ -9,5 +9,5 @@ RUN apt update \
     && apt autoremove -y \
     && apt clean -y \
     && rm -rf /var/lib/apt/lists/* \
-    && rustup component add rustfmt --toolchain 1.52.1-x86_64-unknown-linux-gnu \
+    && rustup component add rustfmt \
     && cargo install cargo-watch
